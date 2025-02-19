@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="sidebar">
+    <h1>nicool</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
+        <li><a href="{{ '/portfolio.html' | relative_url }}">Portfolio</a></li>
+        <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+</html>
